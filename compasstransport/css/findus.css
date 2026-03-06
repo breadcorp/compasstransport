@@ -1,0 +1,142 @@
+html, body {
+    overflow: hidden;
+    background-color: white;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.kde{
+    /*text-align: center;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 60px;
+}
+.topnav {
+    overflow: hidden;
+    text-align: center;
+    background-color: #a8aa2d;
+    position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    text-align: center;
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+    text-align: center;
+    background-color: #fbff00;
+    color: white;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: #333;
+    padding-top: 60px;
+    overflow-y: auto;
+    color: #fff;
+    transition: left 0.3s ease-in-out;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+.logos-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    margin-top: -80px; /* Přidáno pro posun ikon výše */
+}
+
+.logo {
+    width: 100px; /* Nastavte velikost podle potřeby */
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px; /* Zaoblené rohy pro efekt */
+    margin: 10px; /* Mezery mezi logy */
+}
+.twitch {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkTWmuPIWirH8YerG3qGlzM_3xqIXIhMp8ymYt7f3MhQ&s');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instagram {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/800px-Instagram_logo_2022.svg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tiktok {
+    background-image: url('ttlogo.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.discord {
+    background-image: url('https://banner2.cleanpng.com/20180502/eve/kisspng-discord-computer-icons-logo-simplify-5aea4b0b9a5315.3824979315253040756321.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
